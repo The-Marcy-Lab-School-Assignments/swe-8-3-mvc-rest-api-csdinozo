@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { getPostById, updatePost, deletePost } from '../adapters/fellowAdapters';
+import { getPostById, updatePost, deletePost } from '../adapters/postAdapters';
 
 const PostDetails = () => {
   const [post, setPost] = useState({});

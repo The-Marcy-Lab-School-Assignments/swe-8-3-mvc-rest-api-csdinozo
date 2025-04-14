@@ -29,6 +29,8 @@ const Home = () => {
         setNewPostName('');
     };
 
+    console.log(posts)
+
     return (
         <>
             <h1>Home</h1>

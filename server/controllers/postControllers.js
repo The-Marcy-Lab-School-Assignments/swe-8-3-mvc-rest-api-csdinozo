@@ -1,4 +1,4 @@
-const Post = require('../model/Post');
+const Post = require('../models/Post');
 
 // Get All (Read)
 const servePosts = (req, res) => {
