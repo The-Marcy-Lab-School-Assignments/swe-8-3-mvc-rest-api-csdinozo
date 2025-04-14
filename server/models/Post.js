@@ -11,7 +11,7 @@ class Post {
         const newPost = {
             title,
             content,
-            id = getId();
+            id: getId();
         }
         posts.push(newPost);
         return newPost;
