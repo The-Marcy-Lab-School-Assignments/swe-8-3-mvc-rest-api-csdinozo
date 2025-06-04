@@ -34,15 +34,15 @@ const createPost = (req, res) => {
 
 // Update
 const updatePost = (req, res) => {
-    const { postTitle, postContent } = req.body;
+    const { title, content } = req.body;
 
-    if (!postTitle && !postContent) {
+    if (!title && !content) {
         return res.status(400).send({ message: "Invalid Request" });
     }
 
     const { id } = req.params;
-    if (postTitle) Post.editTitle(Number(id), postTitle);
-    if (postContent) Post.editContent(Number(id), postContent);
+    if (title) Post.editTitle(Number(id), title);
+    if (content) Post.editContent(Number(id), content);
 
     const updatedPost = Post.find(Number(id));
     if (!updatedPost) {

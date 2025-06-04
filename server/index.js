@@ -10,7 +10,7 @@ const {
 } = require('./controllers/postControllers');
 
 const app = express();
-const pathToFrontendDist = path.join(__dirname, '../frontend/dist');
+const pathToFrontendDist = path.join(__dirname, '../frontend/vite_project/dist');
 
 ////////////////////////
 // Middleware
